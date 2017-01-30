@@ -1,0 +1,4 @@
+services:
+#    social_pro_main.example:
+#        class: SocialPro\MainBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
