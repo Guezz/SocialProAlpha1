@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+    <meta name="twitter:widgets:theme" content="light">
+    <meta property="og:title" content="Your-Title-Here" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="Your-Image-Url" />
+    <meta property="og:description" content="Your-Page-Description" />
+    <title>SocialPro | for real Professionals</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('public/images/theme-mountain-favicon.ico') }}">
+
+    <!-- Font -->
+    <link href='{{ asset("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CMontserrat:400,700%7CPlayfair+Display:400,400italic") }}' rel='stylesheet' type='text/css'>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="{{ asset('public/css/core.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('public/css/skin.css') }}" />
+
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="{{ asset('http://html5shiv.googlecode.com/svn/trunk/html5.js') }}"></script>
+    <![endif]-->
+
+</head>
+<body class="shop home-page">
+
+<!-- Side Navigation Menu -->
+<aside class="side-navigation-wrapper enter-right" data-no-scrollbar data-animation="push-in">
+    <div class="side-navigation-scroll-pane">
+        <div class="side-navigation-inner">
+            <div class="side-navigation-header">
+                <div class="navigation-hide side-nav-hide">
+                    <a href="#">
+                        <span class="icon-cancel medium"></span>
+                    </a>
+                </div>
+            </div>
+            <nav class="side-navigation">
+                <ul>
+                    <li class="current">
+                        <a href="{{ path("social_pro_main_homepage") }}">Acceuil</a>
+                    </li>
+                    <li>
+                        <a href="">Qui nous somme?</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('fos_user_registration_register') }}">Inscription</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('fos_user_security_login') }}">Login</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+            <div class="side-navigation-footer">
+                <p class="copyright no-margin-bottom">&copy; 2017 ESPRIT.</p>
+            </div>
+        </div>
+    </div>
+</aside>
+<!-- Side Navigation Menu End -->
+
+<div class="wrapper">
+    <div class="wrapper-inner">
+
+        <!-- Header -->
+        <header class="header header-fixed header-fixed-on-mobile header-transparent" data-bkg-threshold="100" data-compact-threshold="100">
+            <div class="header-inner">
+                <div class="row nav-bar">
+                    <div class="column width-12 nav-bar-inner">
+                        <div class="logo">
+                            <div class="logo-inner">
+                                <a href="{{ path('social_pro_main_homepage') }}"><img src="{{ asset('public/images/logo-dark.png') }}" alt="Warhol Logo" /></a>
+                                <a href="{{ path('social_pro_main_homepage') }}"><img src="{{ asset('public/images/logo.png') }}" alt="Warhol Logo" /></a>
+                            </div>
+                        </div>
+
+
+                        <nav class="navigation nav-block primary-navigation nav-right">
+                            <ul>
+                                <li class="current">
+                                    <a href="{{ path("social_pro_main_homepage") }}">Acceuil</a>
+                                </li>
+                                <li>
+                                    <a href="">Qui nous somme?</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('fos_user_registration_register') }}">Inscription</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('fos_user_security_login') }}">Login</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Content -->
+        <div class="content clearfix">
+
+            <!-- Fullscreen Slider Section -->
+            <section class="section-block featured-media tm-slider-parallax-container">
+                <div class="tm-slider-container full-width-slider" data-featured-slider data-parallax data-scale-under="960">
+                    <ul class="tms-slides">
+                        <li class="tms-slide" data-image data-force-fit data-overlay-bkg-color="#000000" data-overlay-bkg-opacity="0.70">
+                            <div class="tms-content">
+                                <div class="tms-content-inner center v-align-middle">
+                                    <div class="row">
+                                        <div class="column width-12">
+                                            <h1 class="title-xlarge font-alt-2 weight-light color-white mb-20">
+                                                <span class="tms-caption" data-animate-in="preset:slideInDownShort;duration:800ms;delay:200;" data-no-scale>SocialPro <small class="text-medium opacity-05 pu-80">v.1.0</small></span>
+                                            </h1>
+                                            <div class="clear"></div>
+                                            <p class="tms-caption lead mb-30 color-grey-ultralight"
+                                               data-animate-in="preset:slideInUpShort;duration:900ms;delay:200ms;"
+                                               data-no-scale
+                                            >Votre site favorable sociale professionel !</p>
+                                            <div class="clear"></div>
+                                            <a href="{{ path('fos_user_registration_register') }}" data-offset="-60" class="tms-caption button medium pill scroll-link border-white bkg-hover-theme color-white color-hover-white"
+                                               data-animate-in="preset:scaleOut;duration:900ms;delay:400ms;"
+                                               data-no-scale
+                                            >Inscrivez Vous!</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img data-src="{{ asset('public/images/slider/slide2.jpg') }}" src="{{ asset('public/images/slider/slide1.jpg') }}" alt=""/>
+
+                        </li>
+                        <li class="tms-slide" data-image data-force-fit data-overlay-bkg-color="#000000" data-overlay-bkg-opacity="0.70">
+                            <div class="tms-content">
+                                <div class="tms-content-inner center v-align-middle">
+                                    <div class="row">
+                                        <div class="column width-12">
+                                            <h1 class="title-xlarge font-alt-2 weight-light color-white mb-20">
+                                                <span class="tms-caption" data-animate-in="preset:slideInDownShort;duration:800ms;delay:200;" data-no-scale>Bienvenue!</span>
+                                            </h1>
+                                            <div class="clear"></div>
+                                            <a href="{{ path('fos_user_registration_register') }}" data-offset="-60" class="tms-caption button medium pill scroll-link border-white bkg-hover-theme color-white color-hover-white"
+                                               data-animate-in="preset:scaleOut;duration:900ms;delay:400ms;"
+                                               data-no-scale
+                                            >Login</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img data-src="{{ asset('public/images/slider/slide1.jpg') }}" src="{{ asset('public/images/slider/slide1.jpg') }}" alt=""/>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <!-- Fullscreen Slider Section End -->
+
+            <!-- Feature Section 2 -->
+            <section id="block-design" class="section-block feature-2">
+                <div class="row flex">
+                    <div class="column width-6 push-6">
+                        <div class="feature-image mb-mobile-50">
+                            <div class="feature-image-inner center-on-mobile horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
+                                <img src="{{ asset('public/images/generic/feature-templates.jpg') }}" alt="Wharhol HTML Layouts Purpose Built Content Blocks" title="Wharhol HTML Layouts Purpose Built Content Blocks" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column width-5 pull-6 pull-1">
+                        <div class="feature-content">
+                            <div class="feature-content-inner horizon center-on-mobile" data-animate-in="preset:slideInUpShort;duration:900ms;delay:300ms;" data-threshold="0.6">
+                                <h2 class="mb-30">Refined <span class="font-alt-2 weight-light">&amp;</span> Professional</h2>
+                                <p class="lead font-alt-2">Build truly stunning layouts quickly by mixing pre-designed content blocks from different layouts. Simple!</p>
+                                <p>There are many multi-purpose templates; there are very few that have a strong emphasis on design. Warhol comes with a multitude of carfully designed page layouts, e-commerce layouts and purpose built content blocks that when pieced together create stunning, professional layouts. The possibilities are endless.</p>
+                                <a href="#demos" data-offset="-60" class="button scroll-link medium pill scroll-link border-grey-light bkg-hover-theme color-grey color-hover-white"
+                                   data-animate-in="preset:scaleOut;duration:900ms;delay:400ms;"
+                                >View Layouts</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Feature Section 2 End -->
+
+            <!-- Feature Section 2 -->
+            <section class="section-block bkg-charcoal feature-2 right">
+                <div class="row flex">
+                    <div class="column width-6">
+                        <div class="feature-image mb-mobile-50">
+                            <div class="feature-image-inner center-on-mobile horizon" data-animate-in="preset:slideInRightShort;duration:1000ms;" data-threshold="0.6">
+                                <img src="{{ asset('public/images/generic/feature-navigation.jpg') }}" alt="Warhol HTML Off Canvas Navigation" title="Warhol Multipurpose HTML Off Canvas Navigation" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column width-5 push-1">
+                        <div class="feature-content">
+                            <div class="feature-content-inner left center-on-mobile horizon" data-animate-in="preset:slideInUpShort;duration:900ms;delay:300ms;" data-threshold="0.6">
+                                <h2 class="mb-30 color-white">Beautiful Navigation</h2>
+                                <p class="lead font-alt-2 color-white opacity-06">Warhol offers several navgiation types that are functional yet beautiful.</p>
+                                <p class="color-white opacity-06">With multiple navigation types and a variety of ways to style headers, main menus, and auxiliary navigation, you can create a totally unique experience for your users.</p>
+                                <a href="index-one-page.html" class="button medium pill border-grey-light bkg-hover-theme color-grey-light color-hover-white fade-location"
+                                   data-animate-in="preset:scaleOut;duration:900ms;delay:400ms;"
+                                >See Example</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Feature Section 2 End -->
+
+            <!-- Demo Grid -->
+            <div id="demos" class="section-block no-padding-bottom bkg-grey-ultralight">
+                <div class="row">
+                    <div class="column width-12">
+                        <h3 class="mb-60">Homepage Layouts</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="demo-grid" class="section-block grid-container fade-in-progressively no-padding-top no-padding-bottom bkg-grey-ultralight" data-layout-mode="masonry" data-animate-filter-duration="700" data-animate-resize data-animate-resize-duration="0">
+                <div class="row">
+                    <div class="column width-12">
+                        <div class="row grid content-grid-3">
+                            <div class="grid-item grid-sizer">
+                                <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.8">
+                                    <a class="overlay-link" href="index-agency.html">
+                                        <img src="{{ asset('public/images/portfolio/grid/large-margins/agency.jpg') }}" alt=""/>
+                                        <span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title"><small>Creative Agency</small></span>
+													</span>
+												</span>
+											</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.8">
+                                    <a class="overlay-link" href="index-ecommerce.html">
+                                        <img src="images/portfolio/grid/large-margins/ecommerce.jpg" alt=""/>
+                                        <span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title"><small>Ecommerce</small></span>
+													</span>
+												</span>
+											</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.8">
+                                    <a class="overlay-link" href="index-small-business.html">
+                                        <img src="images/portfolio/grid/large-margins/small-business.jpg" alt=""/>
+                                        <span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title"><small>Small Business</small></span>
+													</span>
+												</span>
+											</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.8">
+                                    <a class="overlay-link" href="index-photography.html">
+                                        <img src="images/portfolio/grid/large-margins/photography.jpg" alt=""/>
+                                        <span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title"><small>Photography</small></span>
+													</span>
+												</span>
+											</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.8">
+                                    <a class="overlay-link" href="index-corporate.html">
+                                        <img src="images/portfolio/grid/large-margins/corporate.jpg" alt=""/>
+                                        <span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title"><small>Corporate</small></span>
+													</span>
+												</span>
+											</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.8">
+                                    <a class="overlay-link" href="index-showcase.html">
+                                        <img src="images/portfolio/grid/large-margins/showcase.jpg" alt=""/>
+                                        <span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title"><small>Fullscreen Showcase</small></span>
+													</span>
+												</span>
+											</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.8">
+                                    <a class="overlay-link" href="index-personal.html">
+                                        <img src="images/portfolio/grid/large-margins/personal.jpg" alt=""/>
+                                        <span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title"><small>Personal Folio</small></span>
+													</span>
+												</span>
+											</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.8">
+                                    <a class="overlay-link" href="index-one-page.html">
+                                        <img src="images/portfolio/grid/large-margins/one-page.jpg" alt=""/>
+                                        <span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title"><small>One Page</small></span>
+													</span>
+												</span>
+											</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="thumbnail">
+                                    <img src="images/portfolio/grid/large-margins/coming-soon.jpg" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Demo Grid End -->
+
+            <!-- Hero Grid -->
+            <div id="heros" class="section-block pt-110 no-padding-bottom bkg-grey-ultralight">
+                <div class="row">
+                    <div class="column width-12">
+                        <h3 class="mb-60">Special Hero Sections</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="section-block grid-container fade-in-progressively no-padding-top bkg-grey-ultralight" data-layout-mode="masonry" data-animate-filter-duration="700" data-animate-resize data-animate-resize-duration="0">
+                <div class="row">
+                    <div class="column width-12">
+                        <div class="row grid content-grid-3">
+                            <div class="grid-item grid-sizer">
+                                <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.8">
+                                    <a class="overlay-link" href="hero-1.html">
+                                        <img src="{{ asset('public/images/portfolio/grid/large-margins/hero-1.jpg') }}" alt=""/>
+                                        <span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title"><small>Hero One</small></span>
+													</span>
+												</span>
+											</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.8">
+                                    <a class="overlay-link" href="hero-2.html">
+                                        <img src="{{ asset('public/images/portfolio/grid/large-margins/hero-2.jpg') }}" alt=""/>
+                                        <span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title"><small>Hero Two</small></span>
+													</span>
+												</span>
+											</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.8">
+                                    <a class="overlay-link" href="hero-3.html">
+                                        <img src="{{ asset('public/images/portfolio/grid/large-margins/hero-3.jpg') }}" alt=""/>
+                                        <span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title"><small>Hero Three</small></span>
+													</span>
+												</span>
+											</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.8">
+                                    <a class="overlay-link" href="hero-4.html">
+                                        <img src="{{ asset('public/images/portfolio/grid/large-margins/hero-4.jpg') }}" alt=""/>
+                                        <span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title"><small>Hero Four</small></span>
+													</span>
+												</span>
+											</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.8">
+                                    <a class="overlay-link" href="hero-5.html">
+                                        <img src="{{ asset('public/images/portfolio/grid/large-margins/hero-5.jpg') }}" alt=""/>
+                                        <span class="overlay-info">
+												<span>
+													<span>
+														<span class="project-title"><small>Hero Five</small></span>
+													</span>
+												</span>
+											</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="thumbnail">
+                                    <img src="{{ asset('public/images/portfolio/grid/large-margins/coming-soon.jpg') }}" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero Grid End -->
+
+            <!-- Feature Column Section -->
+            <div id="discover" class="section-block replicable-content">
+                <div class="row">
+                    <div class="column width-8 offset-2 center">
+                        <h2 class="mb-30">Build a Stunning Website</h2>
+                        <p class="lead font-alt-2 mb-80">Warhol is a complete design toolkit that gives you the tools you need to create a unique and professional looking website for you or your client.</p>
+                    </div>
+                </div>
+                <div class="row flex">
+                    <div class="column width-4">
+                        <div class="box small bkg-white">
+                            <div class="feature-column small mb-50 left">
+                                <span class="feature-icon icon-map color-theme"></span>
+                                <div class="feature-text">
+                                    <h4>8 Homepages</h4>
+                                    <p>Warhol comes with 8 different homepages and 8 unique hero sections that can easily be dropped into any section of any page.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column width-4">
+                        <div class="box small bkg-white">
+                            <div class="feature-column small left">
+                                <span class="feature-icon icon-add-to-list color-theme"></span>
+                                <div class="feature-text">
+                                    <h4>20+ Components</h4>
+                                    <p>Make any design stand out by using a combination of the 20+ components that come with Warhol. Accordions, tabs, buttons and much more.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column width-4">
+                        <div class="box small bkg-white">
+                            <div class="feature-column small mb-50 left">
+                                <span class="feature-icon icon-power-plug color-theme"></span>
+                                <div class="feature-text">
+                                    <h4>8+ Plugins</h4>
+                                    <p>As with all our templates, Warhol comes with 8 premium in-house developed plugins, which means that when there's an update, you'll get it.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column width-4">
+                        <div class="box small bkg-white">
+                            <div class="feature-column small left">
+                                <span class="feature-icon icon-grid color-theme"></span>
+                                <div class="feature-text">
+                                    <h4>Block Based</h4>
+                                    <p>Warhol, like all our templates, is built using a block based, responsive framework that makes designing easier. Move blocks around and get a new design.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column width-4">
+                        <div class="box small bkg-white">
+                            <div class="feature-column small mb-50 left">
+                                <span class="feature-icon icon-credit color-theme"></span>
+                                <div class="feature-text">
+                                    <h4>Ultimate Startup Pack</h4>
+                                    <p>Warhol is a great starting point for startups that need a quick and simple solution when it comes to creating a site. Save both time &amp; money.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column width-4">
+                        <div class="box small bkg-white">
+                            <div class="feature-column small left">
+                                <span class="feature-icon icon-infinity color-theme"></span>
+                                <div class="feature-text">
+                                    <h4>Infinite Possibilities</h4>
+                                    <p>With a range of pre-design content blocks, components and plugins, Sarte provides you with an unlimited number of possibilities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature Column Section End -->
+
+            <!-- More -->
+            <div class="section-block pt-50 pb-40 bkg-grey-ultralight">
+                <div class="row flex">
+                    <div class="column width-12 center">
+                        <a href="#" class="button pill medium buy-template left bkg-theme border-hover-theme color-white color-hover-theme text-uppercase fade-location">Purchase Warhol Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- More End -->
+
+            <!-- Search Modal End -->
+            <div id="search-modal" class="hide">
+                <div class="row">
+                    <div class="column width-12 center">
+                        <div class="search-form-container site-search">
+                            <form action="#" method="get" novalidate>
+                                <div class="row">
+                                    <div class="column width-12">
+                                        <div class="field-wrapper">
+                                            <input type="text" name="search" class="form-search form-element" placeholder="type &amp; hit enter...">
+                                            <span class="border"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="form-response"></div>
+                        </div>
+                        <a href="#" class="tml-aux-exit">Close</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Search Modal End -->
+
+        </div>
+        <!-- Content End -->
+
+        <!-- Footer -->
+        <footer class="footer footer-fixed">
+            <div class="footer-top two-columns-on-tablet">
+                <div class="row flex">
+                    <div class="column width-3">
+                        <div class="widget">
+                            <h4 class="widget-title weight-light">About</h4>
+                            <p>There are many multi-purpose templates; there are very few that have a strong emphasis on design. Warhol comes with a multitude of carfully designed page layouts and purpose built content blocks that when pieced together create stunning, professional layouts. The possibilities are endless. Warhol is simple, elegent and powerful!</p>
+                        </div>
+                    </div>
+                    <div class="column width-3">
+                        <div class="widget">
+                            <h4 class="widget-title weight-light">Warhol News</h4>
+                            <ul class="list-group large">
+                                <li>
+                                    <a href="#">Our New Los Angeles Office </a>
+                                    <span class="post-info"><span class="post-date">27 Jul 2014</span></span>
+                                </li>
+                                <li>
+                                    <a href="#">Tutorial - Hidden Gems of Sublime</a>
+                                    <span class="post-info"><span class="post-date">02 Jun 2014</span></span>
+                                </li>
+                                <li>
+                                    <a href="#">Design Rules - Getting Back to Basics</a>
+                                    <span class="post-info"><span class="post-date">15 May 2014</span></span>
+                                </li>
+                                <li>
+                                    <a href="#">New Team Member - Jason Adams</a>
+                                    <span class="post-info"><span class="post-date">15 May 2014</span></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column width-3">
+                        <div class="widget">
+                            <h4 class="widget-title">The Archives</h4>
+                            <ul class="list-group large">
+                                <li>
+                                    <a href="#">February 2016</a>
+                                </li>
+                                <li>
+                                    <a href="#">December 2015</a>
+                                </li>
+                                <li>
+                                    <a href="#">November 2014</a>
+                                </li>
+                                <li>
+                                    <a href="#">April 2014</a>
+                                </li>
+                                <li>
+                                    <a href="#">February 2014</a>
+                                </li>
+                                <li>
+                                    <a href="#">January 2014</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column width-3">
+                        <div class="widget">
+                            <h4 class="widget-title">Never Miss Updates</h4>
+                            <p class="mb-20">Want to be notified when we launch a new template or an udpate. Just sign up and we'll send you a notification by email.</p>
+                            <div class="signup-form-container">
+                                <form class="signup-form" action="php/subscribe.php" method="post" novalidate>
+                                    <div class="row">
+                                        <div class="column width-12 left">
+                                            <div class="field-wrapper">
+                                                <input type="email" name="email" class="form-email form-element no-padding-left no-padding-right" placeholder="Email address*" tabindex="2" required>
+                                            </div>
+                                        </div>
+                                        <div class="column width-12">
+                                            <input type="submit" value="Signup" class="form-submit button pill bkg-charcoal-light bkg-hover-theme color-white color-hover-white">
+                                        </div>
+                                    </div>
+                                    <input type="text" name="honeypot" class="form-honeypot form-element">
+                                </form>
+                                <div class="form-response show">*No spamming here.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="column width-12">
+                        <div class="footer-bottom-inner center">
+                            <p class="copyright pull-left clear-float-on-mobile">
+                                &copy; ThemeMountain. All Rights Reserved. <a href="#">Terms &amp; Conditions</a> | <a href="#">Cookie policy</a>
+                            </p>
+                            <ul class="social-list list-horizontal pull-right clear-float-on-mobile">
+                                <li><a href="#"><span class="icon-twitter-with-circle medium"></span></a></li>
+                                <li><a href="#"><span class="icon-facebook-with-circle medium"></span></a></li>
+                                <li><a href="#"><span class="icon-youtube-with-circle medium"></span></a></li>
+                                <li><a href="#"><span class="icon-vimeo-with-circle medium"></span></a></li>
+                                <li><a href="#"><span class="icon-instagram-with-circle medium"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+    </div>
+</div>
+
+<!-- Js -->
+<script src="{{ asset('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js') }}"></script>
+<script src="{{ asset('http://maps.googleapis.com/maps/api/js?v=3') }}"></script>
+<script src="{{ asset('public/js/timber.master.min.js') }}"></script>
+</body>
+</html>
