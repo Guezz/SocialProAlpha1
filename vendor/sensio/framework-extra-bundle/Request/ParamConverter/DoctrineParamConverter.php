@@ -46,7 +46,7 @@ class DoctrineParamConverter implements ParamConverterInterface
         $class = $configuration->getClass();
         $options = $this->getOptions($configuration);
 
-        if (null === $request->attributes->get($name, false)) {
+        if (null === $request->attributes->get($name)) {
             $configuration->setIsOptional(true);
         }
 
@@ -57,7 +57,7 @@ class DoctrineParamConverter implements ParamConverterInterface
                 if ($configuration->isOptional()) {
                     $object = null;
                 } else {
-                    throw new \LogicException('Unable to guess how to get a Doctrine instance from the request information.');
+                    throw new \LogicException(sprintf('Unable to guess how to get a Doctrine instance from the request information for parameter "%s".', $name));
                 }
             }
         }
