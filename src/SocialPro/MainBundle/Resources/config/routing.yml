@@ -5,3 +5,6 @@ mainpage:
     path:     /mainpage
     defaults: { _controller: SocialProMainBundle:SocialPro:mainpage }
 
+profile2:
+    path:     /profile2
+    defaults: { _controller: SocialProMainBundle:SocialPro:profile2 }

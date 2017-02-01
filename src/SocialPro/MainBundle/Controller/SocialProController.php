@@ -14,4 +14,8 @@ class SocialProController extends Controller
     {
         return $this->render('SocialProMainBundle:SocialPro:mainpage.html.twig');
     }
+    public function profile2Action()
+    {
+        return $this->render('SocialProMainBundle:SocialPro:profile.html.twig');
+    }
 }
