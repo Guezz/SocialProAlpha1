@@ -1,3 +1,0 @@
-social_pro_user_homepage:
-    path:     /
-    defaults: { _controller: SocialProUserBundle:Default:index }
