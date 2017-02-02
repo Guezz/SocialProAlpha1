@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+        <meta name="twitter:widgets:theme" content="light">
+        <meta property="og:title" content="Your-Title-Here" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="Your-Image-Url" />
+        <meta property="og:description" content="Your-Page-Description" />
+        <title>SocialPro | for real Professionals</title>
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('public/images/theme-mountain-favicon.ico') }}">
+
+        <!-- Font -->
+        <link href='{{ asset("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CMontserrat:400,700%7CPlayfair+Display:400,400italic") }}' rel='stylesheet' type='text/css'>
+
+        <!-- Css -->
+        <link rel="stylesheet" href="{{ asset('public/css/core.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('public/css/skin.css') }}" />
+
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="{{ asset('http://html5shiv.googlecode.com/svn/trunk/html5.js') }}"></script>
+        <![endif]-->
+    </head>
+<body style="background-color: #F9F9F9;">
+<center>
+    <div>
+        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+            {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+            <a href="{{ path('fos_user_security_logout') }}">
+                {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+            </a>
+        {% else %}
+            <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+        {% endif %}
+    </div></center>
+
+{% if app.request.hasPreviousSession %}
+    {% for type, messages in app.session.flashbag.all() %}
+        {% for message in messages %}
+            <div class="flash-{{ type }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+
+<!-- Side Navigation Menu -->
+<aside class="side-navigation-wrapper enter-right" data-no-scrollbar data-animation="push-in">
+    <div class="side-navigation-scroll-pane">
+        <div class="side-navigation-inner">
+            <div class="side-navigation-header">
+                <div class="navigation-hide side-nav-hide">
+                    <a href="#">
+                        <span class="icon-cancel medium"></span>
+                    </a>
+                </div>
+            </div>
+            <nav class="side-navigation">
+                <ul>
+                    <li class="current">
+                        <a href="{{ path("social_pro_main_homepage") }}">Acceuil</a>
+                    </li>
+                    <li>
+                        <a href="">Qui nous somme?</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('fos_user_registration_register') }}">Inscription</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('fos_user_security_login') }}">Login</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+            <div class="side-navigation-footer">
+                <p class="copyright no-margin-bottom">&copy; 2017 ESPRIT.</p>
+            </div>
+        </div>
+    </div>
+</aside>
+<!-- Side Navigation Menu End -->
+
+<div class="wrapper">
+    <div class="wrapper-inner">
+
+        <!-- Header -->
+        <header style="background-color: #232323" class="header header-fixed header-fixed-on-mobile header-transparent" data-bkg-threshold="100" data-compact-threshold="100">
+            <div class="header-inner">
+                <div class="row nav-bar">
+                    <div class="column width-12 nav-bar-inner">
+                        <div class="logo">
+                            <div class="logo-inner">
+                                <a href="{{ path('social_pro_main_homepage') }}"><img src="{{ asset('public/images/logo-dark.png') }}" alt="Warhol Logo" /></a>
+                                <a href="{{ path('social_pro_main_homepage') }}"><img src="{{ asset('public/images/logo.png') }}" alt="Warhol Logo" /></a>
+                            </div>
+                        </div>
+
+
+                        <nav class="navigation nav-block primary-navigation nav-right">
+                            <ul>
+                                <li class="current">
+                                    <a href="{{ path("social_pro_main_homepage") }}">Acceuil</a>
+                                </li>
+                                <li>
+                                    <a href="">Qui nous somme?</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('fos_user_registration_register') }}">Inscription</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('fos_user_security_login') }}">Login</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+        <section class="section-block feature-2">
+            <center>
+                <div style="width: 500px">
+
+                    {% block fos_user_content %}
+                    {% endblock fos_user_content %}
+
+                </div>
+            </center>
+        </section>
+
+
+
+        <!-- Js -->
+        <script src="{{ asset('https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js') }}"></script>
+        <script src="{{ asset('http://maps.googleapis.com/maps/api/js?v=3') }}"></script>
+        <script src="{{ asset('public/js/timber.master.min.js') }}"></script>
+
+</body>
+</html>
