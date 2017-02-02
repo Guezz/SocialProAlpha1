@@ -8,3 +8,7 @@ mainpage:
 profile2:
     path:     /profile2
     defaults: { _controller: SocialProMainBundle:SocialPro:profile2 }
+
+parametresprofil:
+    path:     /paraprofile
+    defaults: { _controller: SocialProMainBundle:SocialPro:parametresprofil }
