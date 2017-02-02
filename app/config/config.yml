@@ -72,7 +72,7 @@ swiftmailer:
 fos_user:
     db_driver: orm # other valid values are 'mongodb' and 'couchdb'
     firewall_name: main
-    user_class: SocialPro\MainBundle\Entity\User
+    user_class: SocialPro\UserBundle\Entity\User
 
 framework:
     translator: ~
