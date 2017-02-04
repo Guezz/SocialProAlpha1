@@ -1,3 +1,7 @@
+project:
+    resource: "@ProjectBundle/Resources/config/routing.yml"
+    prefix:   /
+
 social_pro_user:
     resource: "@SocialProUserBundle/Resources/config/routing.yml"
     prefix:   /

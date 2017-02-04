@@ -781,12 +781,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "4dc0478977497f495f83e003dfa99c97eb6c0b10"
+                "reference": "a314d4aef3c3a34742bb6ae99065f27e6e49e000"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/4dc0478977497f495f83e003dfa99c97eb6c0b10",
-                "reference": "4dc0478977497f495f83e003dfa99c97eb6c0b10",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/a314d4aef3c3a34742bb6ae99065f27e6e49e000",
+                "reference": "a314d4aef3c3a34742bb6ae99065f27e6e49e000",
                 "shasum": ""
             },
             "require": {
@@ -850,7 +850,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2017-02-02 12:29:30"
+            "time": "2017-02-02 14:13:19"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1226,16 +1226,16 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v3.0.20",
+            "version": "v3.0.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "0d8fa024edb41f9228daf78f96552f9d9079854e"
+                "reference": "ed86f6fb1753e76b39ff8b87f527045ca6b97169"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/0d8fa024edb41f9228daf78f96552f9d9079854e",
-                "reference": "0d8fa024edb41f9228daf78f96552f9d9079854e",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/ed86f6fb1753e76b39ff8b87f527045ca6b97169",
+                "reference": "ed86f6fb1753e76b39ff8b87f527045ca6b97169",
                 "shasum": ""
             },
             "require": {
@@ -1290,7 +1290,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2017-02-01T15:59:54+00:00"
+            "time": "2017-02-02T15:31:23+00:00"
         },
         {
             "name": "sensiolabs/security-checker",

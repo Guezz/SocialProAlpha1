@@ -1,0 +1,21 @@
+project_homepage:
+    path:     /project
+    defaults: { _controller: ProjectBundle:Project:index }
+project_myproject:
+    path:     /my_project
+    defaults: { _controller: ProjectBundle:Project:list }
+project_add:
+    path:     /project_add
+    defaults: { _controller: ProjectBundle:Project:add }
+project_remove:
+    path:     /project_search
+    defaults: { _controller: ProjectBundle:Project:search }
+project_edit:
+    path:     /project_edit
+    defaults: { _controller: ProjectBundle:Project:edit }
+project_select:
+    path:     /project/{id}
+    defaults: { _controller: ProjectBundle:Project:select }
+project_founding:
+    path:     /project_found
+    defaults: { _controller: ProjectBundle:Project:founds }
