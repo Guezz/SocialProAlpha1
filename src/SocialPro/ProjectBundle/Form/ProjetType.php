@@ -17,7 +17,7 @@ class ProjetType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('idInd', HiddenType::class)->add('description', TextareaType::class)->add('cout', MoneyType::class)->add('domaine', TextType::class)        ;
+        $builder->add('nom', TextType::class)->add('description', TextareaType::class)->add('cout', MoneyType::class)->add('domaine', TextType::class)        ;
     }
     //
     /**

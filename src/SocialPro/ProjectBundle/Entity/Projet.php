@@ -31,6 +31,13 @@ class Projet
     /**
      * @var string
      *
+     * @ORM\Column(name="nom", type="string", length=100)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="description", type="string", length=255)
      */
     private $description;
@@ -154,6 +161,22 @@ class Projet
     public function getDomaine()
     {
         return $this->domaine;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * @param string $nom
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
     }
 }
 
