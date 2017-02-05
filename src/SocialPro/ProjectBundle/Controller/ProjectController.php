@@ -32,8 +32,10 @@ class ProjectController extends Controller
 
             $em->persist($project);
             $em->flush();
-
-            return new Response('produit ajouté');
+            $user = $this->getUser();
+            return $this->render('@FOSUser/Profile/show.html.twig', array(
+                'user' => $user,
+            ));
 
         }
 
