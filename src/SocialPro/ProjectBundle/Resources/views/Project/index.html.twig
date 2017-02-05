@@ -1,11 +1,11 @@
 {% extends "SocialProMainBundle::layout.html.twig" %}
 
 {% block contenent %}
-    <div>
-
-        <h1>hello everyone</h1>
-
-    </div>
+    <ul>
+        {% for pro in project %}
+            <li><a href="project/{{ pro.id }}">{{ pro.nom }}</a> </li>
+        {% endfor %}
+    </ul>
 
 
 {% endblock %}

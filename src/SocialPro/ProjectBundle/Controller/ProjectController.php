@@ -13,7 +13,19 @@ class ProjectController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('ProjectBundle:Project:index.html.twig');
+
+        $repository = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('ProjectBundle:Projet')
+        ;
+
+        $listProjects = $repository->findAll();
+
+
+        return $this->render('ProjectBundle:Project:index.html.twig', array(
+            'project' => $listProjects,
+        ));
     }
     public function listAction()
     {
