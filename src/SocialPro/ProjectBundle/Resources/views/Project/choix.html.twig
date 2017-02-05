@@ -1,0 +1,10 @@
+{% extends "SocialProMainBundle::layout.html.twig" %}
+
+{% block contenent %}
+
+ <h3>Nom : </h3> {{ project.nom }}
+    <h3>Description : </h3> {{ project.description }}
+    <h3>Coût : </h3> {{ project.cout }}
+    <h3>Domaine : </h3>{{ project.domaine }}
+
+{% endblock %}

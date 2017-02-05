@@ -64,9 +64,23 @@ class ProjectController extends Controller
     {
         return $this->render();
     }
+
+    
     public function selectAction($id)
     {
-        return $this->render();
+
+        $repository = $this
+            ->getDoctrine()
+            ->getManager()
+            ->getRepository('ProjectBundle:Projet')
+        ;
+
+        $project = $repository->find($id);
+
+
+        return $this->render('ProjectBundle:Project:choix.html.twig', array(
+            'project' => $project,
+        ));
     }
     public function editAction($id)
     {
