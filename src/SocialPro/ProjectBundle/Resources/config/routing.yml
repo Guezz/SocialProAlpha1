@@ -11,7 +11,7 @@ project_remove:
     path:     /project_search
     defaults: { _controller: ProjectBundle:Project:search }
 project_edit:
-    path:     /project_edit
+    path:     /project_edit/{id}
     defaults: { _controller: ProjectBundle:Project:edit }
 project_select:
     path:     /project/{id}

@@ -1,0 +1,9 @@
+{% extends "SocialProMainBundle::layout.html.twig" %}
+
+{% block contenent %}
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button type="submit">Modifier</button>
+    {{ form_end(form) }}
+{% endblock %}

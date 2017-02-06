@@ -1,10 +1,18 @@
 {% extends "SocialProMainBundle::layout.html.twig" %}
 
 {% block contenent %}
+<table align="center">
+    <tr><td>Nom : </td> <td>{{ project.nom }}</td></tr>
+    <tr><td>Description : </td><td> {{ project.description }}</td></tr>
+    <tr><td>Coût : </td><td> {{ project.cout }}</td></tr>
+    <tr><td>Domaine : </td><td>{{ project.domaine }}</td></tr>
+    {% if app.user.id == project.idInd %}
+    <tr><td>
 
- <h3>Nom : </h3> {{ project.nom }}
-    <h3>Description : </h3> {{ project.description }}
-    <h3>Coût : </h3> {{ project.cout }}
-    <h3>Domaine : </h3>{{ project.domaine }}
+                <a href="{{ path('project_edit', {'id':project.id} ) }}">modifier</a>
+
+        </td></tr>
+    {% endif %}
+</table>
 
 {% endblock %}

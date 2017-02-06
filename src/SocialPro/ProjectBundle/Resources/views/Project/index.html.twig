@@ -1,11 +1,11 @@
 {% extends "SocialProMainBundle::layout.html.twig" %}
 
 {% block contenent %}
-    <ul>
+    <table align="center">
         {% for pro in project %}
-            <li><a href="project/{{ pro.id }}">{{ pro.nom }}</a> </li>
+            <tr><td><a href="project/{{ pro.id }}">{{ pro.nom }}</a></td></tr>
         {% endfor %}
-    </ul>
+    </table>
 
     <div class="navigation">
         {{ knp_pagination_render(project) }}
