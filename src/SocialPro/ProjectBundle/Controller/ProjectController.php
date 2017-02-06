@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 
 class ProjectController extends Controller
 {
-    public function indexAction()
+    public function indexAction(Request $request)
     {
 
         $repository = $this
@@ -22,9 +22,22 @@ class ProjectController extends Controller
 
         $listProjects = $repository->findAll();
 
+        /**
+         * @var $paginator \Knp\Component\Pager\Paginator
+         */
+        $paginator = $this->get('knp_paginator');
+        $result = $paginator->paginate(
+            $listProjects,
+            $request->query->getInt('page',1),
+            $request->query->getInt('limit',3)
+        );
+
+
+        //dump(get_class($paginator));
+
 
         return $this->render('ProjectBundle:Project:index.html.twig', array(
-            'project' => $listProjects,
+            'project' => $result,
         ));
     }
     public function listAction()
@@ -65,7 +78,7 @@ class ProjectController extends Controller
         return $this->render();
     }
 
-    
+
     public function selectAction($id)
     {
 
